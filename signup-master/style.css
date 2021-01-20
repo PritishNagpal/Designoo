@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+/* MAIN FILE! */
+
+
 body{
     font-family: 'Yusei Magic', sans-serif;
-    background-color: teal;
+    width: 100%;
+    background: linear-gradient(80deg,blue,lightblue,cyan);
+    
 }
 
 #container{
@@ -31,17 +36,13 @@ body{
     margin: 5px;
 }
 
-#main_heading{
-
-}
-
 #main_form{
     padding: 25px;
 }
 
 #main_form label{
     display: block;
-    /* padding: 10px; */
+    
 }
 
 #main_form input{
