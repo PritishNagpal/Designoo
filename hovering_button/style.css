@@ -1,0 +1,116 @@
+body{
+    background-color: #000;
+    text-align: center;
+    padding: 20vh;
+}
+
+h2{
+    text-align: center;
+    color: aquamarine;
+    position: absolute;
+    top: 10vh;
+    left:43vw;
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s;
+    margin: 5vh;
+}
+
+
+.btn:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 100px;
+}
+
+.btn:active{
+    transform: translateX(0);
+    box-shadow: 0 20px 50px;
+}
+
+.head_button{
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 70px;
+    display: inline-block;
+    animation-name: todown;
+    animation-duration: 5s;
+}
+
+.head_button_2{
+    background-color: rgba(172, 16, 16, 0.705);
+    padding: 10px 40px;
+    border-radius: 70px;
+    display: inline-block;
+    animation-name: todown;
+    animation-duration: 5s;
+    color: aqua;
+}
+
+.head_button_2{
+    background-color: rgba(214, 200, 3, 0.705);
+    padding: 10px 40px;
+    border-radius: 70px;
+    display: inline-block;
+    animation-name: todown;
+    animation-duration: 5s;
+    color: rgba(13, 105, 13, 0.829);
+}
+
+.head_button_3{
+    background-color: rgba(172, 16, 16, 0.705);
+    padding: 10px 40px;
+    border-radius: 70px;
+    display: inline-block;
+    animation-name: todown;
+    animation-duration: 5s;
+    color: #000;
+}
+
+.head_button_4{
+    background-color: rgba(16, 172, 37, 0.705);
+    padding: 10px 40px;
+    border-radius: 70px;
+    display: inline-block;
+    animation-name: todown;
+    animation-duration: 5s;
+    color: aqua;
+}
+
+.btn::after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.head_button::after{
+    background-color: #fff;
+}
+
+.head_button_2::after{
+    background-color: rgba(131, 15, 15, 0.801);
+}
+
+.head_button_3::after{
+    background-color: rgba(15, 131, 31, 0.801);
+}
+
+.head_button_4::after{
+    background-color: rgba(131, 15, 116, 0.801);
+}
+
+.btn:hover::after{
+    transform: scale(1.5);
+    opacity: 0;
+}
